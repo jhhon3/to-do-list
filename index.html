@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Lista de Tareas Vibrante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mi Lista de Tareas</h1>
+    
+    <div class="input-group">
+      <input type="text" id="tarea-input" placeholder="Escribe una nueva tarea...">
+      <button id="agregar-btn">Agregar</button>
+    </div>
+
+    <ol id="lista-tareas"></ol>
+  </div>
+
+  <!-- Ventana Modal Centrada -->
+  <div id="modal-alerta" class="modal">
+    <div class="modal-contenido">
+      <h3>¿Qué deseas hacer con esta tarea?</h3>
+      <div class="modal-botones">
+        <button id="btn-modal-manana" class="btn-manana">Dejar para mañana 📅</button>
+        <button id="btn-modal-eliminar" class="btn-eliminar">Quitar de la lista 🗑️</button>
+        <button id="btn-modal-cancelar" class="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
